@@ -1,0 +1,63 @@
+<!-- creating a form for the user -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Birthday Week Application</title>
+        <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script type="text/javascript" src="one.js"></script>
+
+
+    </head>
+    <body>
+        <div class="view" style="background-image: url('images/image-one.webp'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        </div>
+
+
+        <div class="container-md mt-3 pt-3 bg-danger ">
+            <img src="images/logo.png"  height="80" width="100" class="rounded-circle"/>
+           <h1 class="text-center text-white " ><u>Akan Names Ghana</u> </h1>
+
+        </div>
+
+
+        <div class="container">
+            <div class="col-12 bg-warning">
+                <h3  class="text-center text-info"><u>Background Information</u></h3>
+                <img src="images/str2.png"  height="80" width="80" class="rounded-circle "/>
+
+                <p>Children are considered to be a gift from God in Ghana. 
+                    The birth of a child is therefore a very joyous and important occasion 
+                    in the life of the parents and the community at large, and the naming ceremony 
+                    is usually carried out with much celebration.
+
+                    At birth, the child is given a day name based upon the gender and
+                     day of the week on which the child was born.</p>
+
+            </div>
+            <div></div>
+
+            
+        <form>
+        <label for="gender">Gender</label><br>
+        <label for="male">Male</label><br>
+        <input type="radio" id="male" name="gender" id="male" value="male"><br>
+        <label for="female">Female</label><br>
+        <input type="radio" id="female" name="gender" id="female" value="female"><br>
+
+        <label for="day">Day</label><br>
+        <input type="text" name="day" id="day"><br>
+        <label for="month">Month</label><br>
+        <input type="text" name="month" id="month"><br>
+        <label for="day">Year</label><br>
+        <input type="year" name="year" id="year"><br>
+        <input type="submit" value="Submit" onclick="getname()">
+
+        </form>
+        
+
+    </body>
+</html>
+
+<!-- <label for="century">Century</label><br> -->

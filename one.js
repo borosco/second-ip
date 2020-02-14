@@ -26,8 +26,12 @@ if(DD<=0 && DD>31){
 if(YY<1000||YY>2020){
     alert("You are too old to be alive or inexistent")
 }
-//validate the gender 
+//validate the gender input
 if(document.getElementById("gender")){
    var gender="male"
 }
-else
+else{
+    var gender="female"
+}
+//using the math ceil code
+if

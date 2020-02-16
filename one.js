@@ -1,5 +1,5 @@
 
-function akanNames() {
+function nickNames() {
     var day = document.getElementById("day").value;
     var DD = parseInt(day); // dd is the day
     var month = document.getElementById("month").value;
@@ -33,8 +33,8 @@ function akanNames() {
         else if(YY<1000||YY>2020){
             alert("Invalid year");
         }
-            //The Math.ceil() function always rounds a number up to the next largest whole number
-            //day 1 monday
+            //The Math.ceil() rounds a number up to the next largest whole number
+            // monday
         else if(Math.ceil(dayOfTheWeek)==1 && gender ==='female'||gender==='male'){
             if(gender==='male'){
              document.getElementById("results").innerHTML=
@@ -45,7 +45,7 @@ function akanNames() {
                "Your day name is "+femaleNames[1]+" ,which means you were born on a Monday."
             }
          }
-           // day 2 Tuesday
+           //  Tuesday
         else if(Math.ceil(dayOfTheWeek)==2 && gender ==='female'|| gender==='male'){
             if(gender==='male'){
              document.getElementById("results").innerHTML=
@@ -56,7 +56,7 @@ function akanNames() {
                 "Your day name is "+femaleNames[2]+", which means you were born on a Tuesday."
            }
          }
-          // day 3 wednesday
+          //  wednesday
         else if(Math.ceil(dayOfTheWeek)==3 && gender ==='female'|| gender==='male'){
             if(gender==='male'){
              document.getElementById("results").innerHTML=
@@ -67,7 +67,7 @@ function akanNames() {
                 "Your day name is "+femaleNames[3]+", which means you were born on a Wednesday."
            }
          }
-          // day 4 thursday
+          // thursday
         else if(Math.ceil(dayOfTheWeek)==4 && gender ==='female'|| gender==='male'){
             if(gender==='male'){
              document.getElementById("results").innerHTML=
@@ -78,7 +78,7 @@ function akanNames() {
                 "Your day name is "+femaleNames[4]+", which means you were born on a Thursday."
            }
          }
-          // day 5 friday
+          //  friday
         else if(Math.ceil(dayOfTheWeek)==5 && gender ==='female'|| gender==='male'){
             if(gender==='male'){
              document.getElementById("results").innerHTML=
@@ -89,7 +89,7 @@ function akanNames() {
                 "Your day name is "+femaleNames[5]+", which means you were born on a Friday."
            }
          }
-          // day 6 saturday
+          //  saturday
         else if(Math.ceil(dayOfTheWeek)==6 && gender ==='female'|| gender==='male'){
             if(gender==='male'){
              document.getElementById("results").innerHTML=
@@ -100,7 +100,7 @@ function akanNames() {
                 "Your day name is "+femaleNames[6]+", which means you were born on a Saturday."
            }
          }
-          // day 7  sunday
+          //   sunday
         else if(Math.ceil(dayOfTheWeek)==0 && gender ==='female'|| gender==='male'){
             if(gender==='male'){
              document.getElementById("results").innerHTML=

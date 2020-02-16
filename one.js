@@ -1,15 +1,15 @@
 
 function nickNames() {
     var day = document.getElementById("day").value;
-    var DD = parseInt(day); // dd is the day
+    var DD = parseInt(day); // dd for day
     var month = document.getElementById("month").value;
-    var MM =parseInt (month);// mm is the month
+    var MM =parseInt (month);// mm for  month
     var year = document.getElementById("year").value;
-    var YY =parseInt (year); // yy is the year
+    var YY =parseInt (year); // yy rep year
     var CC = parseInt(YY - 1) / 100 + 1; // cc is the century in digits
     var dayOfTheWeek = parseInt( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD )%7;//day of the week
-    var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]; // names of male  in array
-    var femaleNames = ["Akosua","Adwoa","Abenaa", "Akua", "Yaa", "Afua", "Ama"];// names of female in array
+    var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]; //  male  in array
+    var femaleNames = ["Akosua","Adwoa","Abenaa", "Akua", "Yaa", "Afua", "Ama"];// female in array
          //checking gender
         if (document.getElementById("gender").checked) {
                 var gender = 'male';
@@ -17,11 +17,11 @@ function nickNames() {
         else{
             var gender = 'female';
         }
-        // checking if month are correct
+        // checking if month is correct
         if (MM < 0 || MM > 12 ){
             alert("invalid month ");
         }
-        // checking if day is correct and does not exceed limit.  if its not correct alert user
+        // checking if day is within the max no of days in a month  if its not correct alert user
         else if (DD < 0 || DD > 31) {
             alert("invalid  Date");
         }

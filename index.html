@@ -15,7 +15,7 @@
 
     <div class="container">
 
-        <div class="container-md mt-3 pt-3 bg-success ">
+        <div class="container-md mt-3 pt-3 bg-primary ">
           <img src="images/logon.png"  height="80" width="300" class="rounded-circle "/>
 
           <h1 class="text-center text-white " >
@@ -24,7 +24,7 @@
           <div class="col-12 bg-dark text-white">
             <img src="images/penny.jpg"  height="50" width="50" class="rounded-circle "/>
 
-              <h3  class="text-left text-info" ><u>Background Information</u></h3>
+              <h5  class="text-center  text-info" ><u>Background Information</u></h5>
 
               <p>Children are considered to be a gift from God in Ghana. 
                   The birth of a child is therefore a very joyous and important occasion 
@@ -42,10 +42,14 @@
           <input type="number" name="date" id="day" maxlength="2"placeholder="day in figure" required/>
           <label for="year">Year</label>
           <input type="number" name="year" id="year" maxlength="4"placeholder="year in figure" required/>
-          <h3><b>Gender</b></h3>
+
+          <div class="row col-md-6 text-center bg-white">
+            <h6><b>Gender</b></h6>
           <input type="radio"  name="gender" id="gender" value="male" checked/> Male<br>
           <input type="radio" name="gender" id="gender" value="female" checked>Female<br>
           <input type="submit" value="submit" onclick="akanNames()">
+          </div>
+          
       </form>
       <div class="col 12 bg-warning">
         <marquee scroll="slide"><p id="results"> YOUR AKAN NAME IS:</p></marquee>
@@ -53,7 +57,8 @@
       <br>
       </div>
       <div class="col-12 bg-info">
-        <h3><b>Kofi Annan</b></h3>
+
+        <h5><b>Kofi Annan</b></h5>
         <img src="images/kofi.jpg"  height="50" width="50" class="rounded-circle "/>
 
         <p>He is male born on Friday was a Ghanaian diplomat who served as the seventh Secretary-General of
@@ -67,7 +72,9 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4 bg-dark text-info text-center">
-          <h3><b>Contact</b></h3>
+          <h5><b>Contact</b></h5>
+          <img src="images/tel.png"  height="30" width="30" class="rounded-circle "/>
+
           <p>
             <i>
               TEL 0700 326 846<br>
@@ -79,8 +86,8 @@
 
         </div>
   
-        <div class="col-sm-4 bg-info text-white text-center" >
-          <h3><b>Visit Ghana</b></h3>
+        <div class="col-sm-4 bg-dark text-white text-center" >
+          <h5><b>Visit Ghana</b></h5>
           <p>
             Several international airlines, including British Airways and Delta Airlines, operate regularly scheduled 
             flights from Ghana to major cities in North America, Europe, Africa and the Middle East.
@@ -89,19 +96,11 @@
 
         </div>
   
-        <div class="col-sm-4 bg-primary text-info text-center">
-          <h3><b>Connect & Share</b></h3>
-          <marquee direction="down">
+        <div class="col-sm-4 bg-primary text-dark text-center">
+          <h5><b>Connect & Share</b></h5>
           <img src="images/twitter.png"  height="50" width="50" class="rounded-circle "/>
-          </marquee>
-          <marquee direction="right">
           <img src="images/fb.png"  height="50" width="50" class="rounded-circle "/>
-          </marquee>
-          <marquee direction="up">
-            <img src="images/ig.png"  height="50" width="50" class="rounded-circle "/>
-
-
-          </marquee>
+          <img src="images/ig.png"  height="50" width="50" class="rounded-circle "/>
 
         </div>
 

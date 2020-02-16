@@ -11,17 +11,12 @@
 
     </head>
     <body>
-        <div class="view" style="background-image: url('images/image-one.webp'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div class="view" style="background-image: url('images/africababy.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
         </div>
-
-
         <div class="container-md mt-3 pt-3 bg-danger ">
             <img src="images/logo.png"  height="80" width="100" class="rounded-circle"/>
            <h1 class="text-center text-white " ><u>Akan Names Ghana</u> </h1>
-
         </div>
-
-
         <div class="container">
             <div class="col-12 bg-warning">
                 <h3  class="text-center text-info"><u>Background Information</u></h3>
@@ -34,30 +29,33 @@
 
                     At birth, the child is given a day name based upon the gender and
                      day of the week on which the child was born.</p>
-
             </div>
-            <div></div>
-
-            
-        <form>
-        <label for="gender">Gender</label><br>
-        <label for="male">Male</label><br>
-        <input type="radio" id="male" name="gender" id="male" value="male"><br>
-        <label for="female">Female</label><br>
-        <input type="radio" id="female" name="gender" id="female" value="female"><br>
-
-        <label for="day">Day</label><br>
-        <input type="text" name="day" id="day"><br>
-        <label for="month">Month</label><br>
-        <input type="text" name="month" id="month"><br>
-        <label for="day">Year</label><br>
-        <input type="year" name="year" id="year"><br>
-        <input type="submit" value="Submit" onclick="getname()">
-        <p id="results">Your AKAN name is:</p>
-
+        <div class="col-12 bg-info">
+          <form method="post" onsubmit="return false" class="form">
+            <label for="month">Month</label>
+            <input type="number" name="month" id="month" maxlength="2"placeholder="month in figures"required/>
+            <label for="date">Date</label>
+            <input type="number" name="date" id="day" maxlength="2"placeholder="day in figure" required/>
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year" maxlength="4"placeholder="year in figure" required/>
+            <h3>select your gender</h3>
+            <input type="radio"  name="gender" id="gender" value="male" checked/> Male<br>
+            <input type="radio" name="gender" id="gender" value="female" checked>Female<br>
+            <input type="submit" value="submit" onclick="akanNames()">
         </form>
-        
+        <p id="results"> YOUR AKAN NAME IS:</p>
 
+        </div>
+        <div class="col-12 bg-info">
+          <h3>Kofi Annan</h3>
+          <img src="images/kofi.jpg"  height="100" width="100" class="rounded-circle "/>
+
+          <p>He is male born on Friday was a Ghanaian diplomat who served as the seventh Secretary-General of<br>
+            the United Nations<br>
+            from January 1997 to December 2006. Annan and the UN were the co-recipients of the 2001 Nobel Peace Prize.<br>
+             He was the founder and chairman of the Kofi Annan Foundation,<br>
+            as well as chairman of The Elders, an international organization founded by Nelson Mandela.</p>
+        </div>
     </body>
 </html>
 

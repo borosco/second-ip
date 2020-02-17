@@ -116,3 +116,4 @@ function nickNames() {
              alert("Enter your information please!!!")
           }
   }
+  
